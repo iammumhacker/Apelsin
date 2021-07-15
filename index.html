@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet">
+	<link href="range.css" rel="stylesheet">
+	<link href="font/montserrat.css" rel="stylesheet">
+	<title>Апельсин | Микро займы</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="head">
+		<a href="index.html">
+			<div class="logo"></div>
+		</a>
+	</div>
+</div>
+<div class="content_container">
+	<div class="left_bar">
+		<div class="get_money" style="right:0;">
+			<div class="sum">
+				<h3 id="head_h3">Сумма займа</h3>
+				<div class="range">
+					<div class="field">
+						<input type="range" min="1000" max="30000" value="100" step="100" id="input">
+			          <div class="value right">
+			          	<span id="span"></span><span id="rub">₽</span>
+			          </div>
+					</div>
+				</div>
+			</div>
+			<div class="date">
+				<h3 id="head_h3">Сроки займа</h3>
+				<div class="range">
+					<div class="field">
+						<input type="range" min="3" max="15" value="3" step="1" id="input1">
+			          <div class="value1 right1">
+			          	<span id="span1"></span><span id="day"> дней</span>
+			          </div>
+					</div>
+				</div>
+			</div>
+			<div class="cash_back_container">
+				<div class="back_cash">
+					<p class="p_cash_back">Вы вернете</p>
+					<span id="back__money__line"></span><span style="font-weight: bold; color:#3CBA73;"> ₽</span>
+					<span id="back__money"></span><span style="font-weight: normal; color:#383D4E; text-decoration:line-through;"> ₽</span>
+				</div>
+				<div class="backe_date">
+					<p class="p_cash_back">Дата возврата</p>
+					<span id="back__date">1</span>
+				</div>
+			</div>
+			<a href="#get" id="get_a">
+				<div class="get">
+					<p>Получить</p>
+				</div>
+			</a>
+		</div>
+	</div>
+<div class="container_price">
+	<div class="price1">
+		<div class="head_h1 head_h">
+			<h2>Заполните заявку</h2>
+		</div>
+		<div class="name">
+			<input type="text" name="sum" placeholder="Имя"required>
+		</div>
+		<div class="second_name">
+			<input type="text" name="sum" placeholder="Фамилия" required>
+		</div>
+		<div class="third_name">
+			<input type="text" name="sum" placeholder="Отчество" required>
+		</div>
+		<div class="phone">
+			<input type="text" name="sum" placeholder="Номер" id="phone" required>
+		</div>
+		<form class="email" id="form_id" method="post" onsubmit="javascript:return validate('form_id','email');">
+			<input type="text" id="email" name="email" placeholder="email" required>
+		</form>
+		<div class="pasport">
+			<input type="text" name="sum" placeholder="Пасспорт серия/номер" id="card" required>
+		</div>
+		<div class="phone">
+			<input type="text" name="sum" placeholder="Доп. контакнт для связи" id="phone_dop">
+		</div>
+		<a href="#">
+			<div class="continue">
+				<p>Получить</p>
+			</div>
+		</a>
+	</div>
+</div>
+</div>
+
+<div class="right_bar">
+	<ul class="menu_ul_bar">
+		<li id="menu_li1"><h2>Возможность выбора лучших предложений на рынке</h2></li>
+		<li id="menu_li2"><h2>Первый займ под 0%</h2></li>
+		<li id="menu_li3"><h2>Требуется только паспорт</h2></li>
+		<li id="menu_li4"><h2>Деньги у вас уже в <span id="time_loan"></span></h2></li>
+	</ul>
+</div>
+
+
+
+<div class="container_application">
+	<div class="application">
+		<div class="start_application">
+			<div class="num num0"><span>1</span></div>
+			<img src="images/click.png" width="141px" height="83px">	
+			<h2 class="head_application">Оформите заявку</h2>
+			<p>Вам нужны только телефон и паспорт, никаких лишних документов.</p>
+		</div>
+		<div class="better_price">
+			<div class="num num1"><span>2</span></div>
+			<img src="images/shake.png"width="141px" height="83px">
+			<h2 class="head_application" style="margin:12px 0 8px 0;">Решение за 1 минуту</h2>
+			<p>Выберем лучшее предложение для вас и предоставим вам выбор</p>
+		</div>
+		<div class="online_share">
+			<div class="num num2"><span>3</span></div>
+			<img src="images/share.png" width="141px" height="83px">
+			<p class="h1_start_application" style="margin-top: 20px;">
+				<span style="color:#000;">
+					Выберите понравившиеся вам предложение!
+				</span>
+			</p>
+		</div>
+
+	</div>
+</div>
+
+		
+
+<footer class="footer">
+	<p style="margin-right: 470px;">Copyright © 2021 Апельсин . Все правазачищены.</p>
+	<p>Связаться с нами +7 978 99 99 999</p>
+	<div class="social" style="margin-left: 50px;"><p>Социальные сети</p></div>
+	<a href="#"><div class="insta"></div></a>
+</footer>
+
+
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="js/main.js"></script>
+<script src="js/range.js"></script>
+<script src="js/value.js"></script>
+<script>
+	jQuery(function($){
+   $("#phone").mask("+7 (999) 99-99-999");
+   $("#phone_dop").mask("+7 (999) 99-99-999");
+   $("#card").mask("9999-999999");
+	});
+</script>
+</body>
+</html>

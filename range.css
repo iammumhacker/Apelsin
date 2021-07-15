@@ -1,0 +1,89 @@
+.range {
+  height:20px;
+  width:220px;
+  background:#fff;
+  padding:0 65px 0 25px;
+}
+.sliderValue {
+  position:relative;
+  width:100%;
+}
+.field {
+  display:flex;
+  align-items:center;
+  height:15%;
+  position:relative;
+}
+.field .value {
+  position:absolute;
+  font-size:18px;
+  font-weight:600;
+}
+.field .value.left {
+  left:-22px;
+}
+.field .value.right {
+  right:-72px;
+}
+.range input {
+  width:90%;
+  height:10px;
+  background:#ddd;
+  border-radius:10px;
+  outline:none;
+  border:none;
+  z-index:2;
+}
+.range input::-webkit-slider-thumb {
+  -webkit-appearance:none !important;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:#FFA200;
+  cursor:pointer;
+}
+
+input[type="range" i] {
+	appearance: none !important;
+}
+
+.range input::-moz-range-thumb {
+  -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:#FFA200;
+  border:1px solid #FFA200;
+  cursor:pointer;
+}
+.range input::-moz-range-progress {
+  background:#FFA200;
+  height:10px;
+  border-radius:10px;
+}
+
+.range input::-webkit-progress-value {
+  -webkit-appearance:none;
+  background:#FFA200;
+  height:10px;
+  border-radius:10px;
+}
+
+#span {
+	color:#000;
+}
+
+.value1 {
+	font-size:18px;
+ 	font-weight:600;
+ 	position: absolute;
+ 	right: -73px;
+ 	color:#000;
+}
+
+#head_h3 {
+	padding-top: 15px;
+}
+
+
+
